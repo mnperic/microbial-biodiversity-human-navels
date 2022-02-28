@@ -54,7 +54,7 @@ function optionChanged(selectedID){
     
     // Slice top 10 sample values
     var sampleValue = idSample[0].sample_values.slice(0,10);
-    sampleValue= sampleValue.reverse();
+    sampleValue = sampleValue.reverse();
     var otuID = idSample[0].otu_ids.slice(0,10);
     otuID = otuID.reverse();
     var otuLabels = idSample[0].otu_labels
@@ -95,8 +95,8 @@ function optionChanged(selectedID){
  // Bubble Chart
  
  // Remove 'sample value' and 'otuID' from individual
- var sampleValue1 =idSample[0].sample_values;
- var otuID1= idSample[0].otu_ids;
+ var sampleValue1 = idSample[0].sample_values;
+ var otuID1 = idSample[0].otu_ids;
  
  // Define the layout and trace object, edit color and orientation
  const trace1 = {
