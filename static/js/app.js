@@ -1,5 +1,5 @@
 function buildMetadata(sample) {
-  d3.json("data/samples.json").then((data) => {
+  d3.json(`data/samples.json`).then((data) => {
     var metadata = data.metadata;
     // Filter the data for the object with the desired sample number
     var resultArray = metadata.filter(sampleObj => sampleObj.id == sample);
@@ -23,7 +23,7 @@ function buildMetadata(sample) {
 }
 
 function buildCharts(sample) {
-  d3.json("data/samples.json").then((data) => {
+  d3.json(`data/samples.json`).then((data) => {
     var samples = data.samples;
     var resultArray = samples.filter(sampleObj => sampleObj.id == sample);
     var result = resultArray[0];
@@ -81,7 +81,7 @@ function init() {
   var selector = d3.select("#selDataset");
 
   // Use the list of sample names to populate the select options
-  d3.json("data/samples.json").then((data) => {
+  d3.json(`data/samples.json`).then((data) => {
     var sampleNames = data.names;
 
     sampleNames.forEach((sample) => {
