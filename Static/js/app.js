@@ -1,18 +1,18 @@
 // Function for change on dropdown menu
 function optionChanged(selectedID){
 
-    // Check if the value is selected in dropdown menu
+    // Check if value is selected in dropdown
     console.log(selectedID);
  
-    // Read the json file for the data
-    d3.json("Resources/samples.json").then((data) => {
+    // Read .json file for data
+    d3.json("data/samples.json").then((data) => {
  
    //  console.log(data);
  
-    // Clear dropdown
+    // Clears dropdown
     d3.select("#selDataset").html("");   
     
-    // Select the metadata array and for each item append the item ID and add IDs to dropdown
+    // Select the metadata array and for each item append the item ID and adds ID to dropdown
     data.metadata.forEach(item =>
          {
           // console.log(item.id);
@@ -22,7 +22,7 @@ function optionChanged(selectedID){
     // Selected value is passed
     d3.select("#selDataset").node().value = selectedID;
     
-    // Filter metadata for selected ID from dropdown
+    // Filter Metadata for selected ID from dropdown
     const idMetadata = data.metadata.filter(item=> (item.id == selectedID));
        // {
        //    console.log("------------------------")
@@ -30,7 +30,7 @@ function optionChanged(selectedID){
        //    console.log(item.id);
           
        // });
-    // Check metadata loaded for the selected ID
+    // Check the metadata loaded for the selected ID
     console.log(idMetadata);
     
     const panelDisplay = d3.select("#sample-metadata");
@@ -41,7 +41,7 @@ function optionChanged(selectedID){
           panelDisplay.append("p").text(`${item[0]}: ${item[1]}`)
        });
  
-    // Bar chart
+    // Bar Chart
  
     // Filter sample array data for the selected ID
     const idSample = data.samples.filter(item => parseInt(item.id) == selectedID);
@@ -54,7 +54,7 @@ function optionChanged(selectedID){
     
     // Slice top 10 sample values
     var sampleValue = idSample[0].sample_values.slice(0,10);
-    sampleValue = sampleValue.reverse();
+    sampleValue= sampleValue.reverse();
     var otuID = idSample[0].otu_ids.slice(0,10);
     otuID = otuID.reverse();
     var otuLabels = idSample[0].otu_labels
@@ -65,11 +65,11 @@ function optionChanged(selectedID){
     //  console.log(otuID);
     //  console.log(otuLabels);
  
-    // Determine Y axis on bar chart
+    // Y axis of bar chart
     const yAxis = otuID.map(item => 'OTU' + " " + item);
        // console.log(yAxis);
     
-    // Define layout and trace object, edit colour and page orientation
+    // Define the layout and trace object, edit color and orientation
        const trace = {
        y: yAxis,
        x: sampleValue,
@@ -94,9 +94,9 @@ function optionChanged(selectedID){
        
  // Bubble Chart
  
- // Remove 'sample value' and 'otuID' from individual
- var sampleValue1 = idSample[0].sample_values;
- var otuID1 = idSample[0].otu_ids;
+ // Remove Sample value and otuID from individual
+ var sampleValue1 =idSample[0].sample_values;
+ var otuID1= idSample[0].otu_ids;
  
  // Define the layout and trace object, edit color and orientation
  const trace1 = {
@@ -124,7 +124,7 @@ function optionChanged(selectedID){
  
  // Bonus: Gauge Chart
 
- // Plot Gauge Chart to for weekly washing frequency 
+ // Gauge Chart to plot weekly washing frequency 
  const gaugeDisplay = d3.select("#gauge");
  gaugeDisplay.html(""); 
  const washFreq = idMetadata[0].wfreq;
