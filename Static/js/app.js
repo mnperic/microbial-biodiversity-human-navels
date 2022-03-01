@@ -4,7 +4,7 @@ function startup() {
    // Grabbing the dropdown element
    var selector = d3.select('#selDataset');
 
-   d3.json("samples.json").then(function(samplesData){
+   d3.json("data/samples.json").then(function(samplesData){
        var names = samplesData.names;
 
        selector.selectAll('option')
@@ -33,7 +33,7 @@ function optionChanged(newID){
 // Bar Chart and Bubble Chart
 function buildPlots(id) {
    // Reading in the json dataset
-   d3.json("samples.json").then(function(samplesData){
+   d3.json("data/samples.json").then(function(samplesData){
        // console.log(samplesData);
        // Filtering for the id selected
        var filtered = samplesData.samples.filter(sample => sample.id == id);
@@ -130,7 +130,7 @@ function proper(str){
 // Demographics
 function demographics(id) {
    // To build the demographics section we need to import the data again
-   d3.json('samples.json').then(function(samplesData){
+   d3.json("data/samples.json").then(function(samplesData){
        var filtered = samplesData.metadata.filter(sample => sample.id == id);
        
        // Selecting the meta-data id on the html page
