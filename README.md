@@ -1,6 +1,8 @@
 # Study of microbial biodiversity in human navels
 
-![Bacteria by filterforge.com](images/bacteria.jpg)
+ <p align="center">
+  <img src="https://github.com/mnperic/microbial-biodiversity-human-navels/blob/main/images/bacteria.jpg" alt="bacteria"/>
+</p>
 
 In this assignment, you will build an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonise human navels.
 
@@ -18,7 +20,9 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 * Use `otu_labels` as the hovertext for the chart.
 
-  ![bar Chart](images/bar_chart.png)
+<p align="center">
+  <img src="https://github.com/mnperic/microbial-biodiversity-human-navels/raw/main/images/bar_chart.png" alt="bacteria"/>
+</p>
 
 3. Create a bubble chart that displays each sample.
 
@@ -32,21 +36,28 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 * Use `otu_labels` for the text values.
 
-![Bubble Chart](images/bubble_chart.png)
+ <p align="center">
+  <img src="https://github.com/mnperic/microbial-biodiversity-human-navels/raw/main/images/bubble_chart.png" alt="bacteria"/>
+</p>
 
 4. Display the sample metadata, i.e., an individual's demographic information.
 
 5. Display each key-value pair from the metadata JSON object somewhere on the page.
 
-![hw](images/key_value_pair.png)
+<p align="center">
+  <img src="https://github.com/mnperic/microbial-biodiversity-human-navels/raw/main/images/key_value_pair.png" alt="bacteria"/>
+</p>
 
 6. Update all of the plots any time that a new sample is selected.
 
 Additionally, you are welcome to create any layout that you would like for your dashboard. An example dashboard is shown below:
 
-![hw](images/dashboard_1.png)
-
-![hw](images/dashboard_2.png)
+<p align="center">
+  <img src="https://github.com/mnperic/microbial-biodiversity-human-navels/raw/main/images/dashboard_1.png" alt="bacteria"/>
+</p>
+<p align="center">
+  <img src="https://github.com/mnperic/microbial-biodiversity-human-navels/raw/main/images/dashboard_2.png" alt="bacteria"/>
+</p>
 
 ## Advanced Challenge Assignment (Optional)
 
@@ -58,7 +69,9 @@ The following task is advanced and therefore optional.
 
 * Update the chart whenever a new sample is selected.
 
-![Weekly Washing Frequency Gauge](images/gauge.png)
+<p align="center">
+  <img src="https://github.com/mnperic/microbial-biodiversity-human-navels/raw/main/images/gauge.png" alt="bacteria"/>
+</p>
 
 ## Deployment
 
