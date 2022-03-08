@@ -4,9 +4,9 @@
   <img src="https://github.com/mnperic/microbial-biodiversity-human-navels/blob/main/images/bacteria.jpg" alt="bacteria"/>
 </p>
 
-In this assignment, you will build an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonise human navels.
+The purpose of this study was to design and build an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonise human navels.
 
-The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
+The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in <b>more than 70% of people,</b> while the rest were relatively rare.
 
 ## Step 1: Plotly
 
