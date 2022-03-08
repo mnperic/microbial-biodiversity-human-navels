@@ -1,4 +1,4 @@
-# Plot.ly Homework - Belly Button Biodiversity
+# Study of microbial biodiversity in human navels
 
 ![Bacteria by filterforge.com](images/bacteria.jpg)
 
